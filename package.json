@@ -2,7 +2,7 @@
   "name": "lab3ss",
   "version": "0.1.0",
   "description": "practice",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
     "dev": "SET PORT=4000 & SET DEBUG=express-gen:* & nodemon start"
