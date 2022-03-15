@@ -9,11 +9,11 @@ const queryString = require('querystring');
 const app = express();
 
 middleware = function (req, res, next) {
-    username = req.query.uname;
-    if (!username) return next();
-    let user = username.toLowerCase().trim();
-    if (!user) return next();
-    res.send('uname is: ' + user);
+    visitorfirst = req.query.uname;
+    if (!visitorfirst) return next();
+    let visitor = visitorfirst.toLowerCase().trim();
+    if (!visitor) return next();
+    res.send('uname is: ' + visitor);
 }
 
 app.get("/", middleware, function (req, res) {
